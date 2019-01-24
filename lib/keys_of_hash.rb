@@ -1,10 +1,10 @@
 class Hash
   def keys_of(*arguments)
-    argument_array = arguments
+    country_array = arguments
     array_output = []
-    self.each do |the_key, the_value|
-      if argument_array.include?(the_value)
-        array_output << the_key
+    self.each do |animal_key, country_value|
+      if country_array.include?(country_value)
+        array_output << animal_key
       end
     end
     array_output
